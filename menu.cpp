@@ -6,12 +6,5 @@
 **                  d
 **                  d
 *********************************************************************/
-#include "recursion.hpp"
-#include "menu.hpp"
-#include <iostream>
 
-int main() {
-    Recursion rec;
-    rec.startSim();
-    return 0;
-}
+#include "menu.hpp"

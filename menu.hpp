@@ -6,12 +6,14 @@
 **                  d
 **                  d
 *********************************************************************/
-#include "recursion.hpp"
-#include "menu.hpp"
-#include <iostream>
 
-int main() {
-    Recursion rec;
-    rec.startSim();
-    return 0;
-}
+#ifndef MENU_HPP
+#define MENU_HPP
+
+class Menu {
+public:
+private:
+
+};
+
+#endif //LAB5_MENU_HPP
