@@ -66,7 +66,9 @@ void Game::chooseOption() {
                     integers[index] = value;
                     cout << "Value saved is " << integers[index] << endl;
                 }
-                secondRecursive(integers, size);
+                int arraySum = 0;
+                arraySum = secondRecursive(integers, size);
+                cout << "The sum of the array is " << arraySum << endl;
             }
             break;
         case 3:
@@ -106,15 +108,24 @@ void Game::firstRecursive(string userString) {
 }
 
 /*********************************************************************
-** Description:     second recursive function
+** Description:     second recursive function that returns the sum
+**                  of the array. Algorithm - if the array has more
+**                  than 1 element, return the value of the last
+**                  element and add it to the value that is returned
+**                  by calling the same function again all the way
+**                  until the base case is reached. Base case is
+**                  reached by subtracting 1 from the size of the
+**                  array until the last element of the array is
+**                  added.
 *********************************************************************/
-void Game::secondRecursive(int *intArr, int size) {
-    cout << "Second function called\n";
+int Game::secondRecursive(int *intArr, int size) {
+    // base case
     if (size == 1) {
-
+        return intArr[size-1];
     }
-    else if (0) {
-
+    // recursive call
+    else if (size > 1) {
+        return intArr[size-1] + secondRecursive(intArr, size - 1);
     }
 
 }
