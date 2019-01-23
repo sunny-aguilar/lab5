@@ -71,7 +71,11 @@ void Game::chooseOption() {
 
 /*********************************************************************
 ** Description:     first recursive function. Reverses a string using
- *                  recursion
+**                  recursion. Algorithm - if the string length is
+**                  greater than 1, print the last character and
+**                  recursively, remove the last character from the
+**                  string, and call the function again. If the length
+**                  of the string is 1, print it out and function ends.
 *********************************************************************/
 void Game::firstRecursive(string userString) {
     if (userString.length() == 1) {
