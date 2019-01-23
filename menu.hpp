@@ -25,6 +25,8 @@ public:
     void menuEndGame();
     void menuEnterString();
     void menuReversedString();
+    void menuEnterArraySize();
+    void menuEnterArrayValue(int index);
     int validateNumber(int min, int max);
 
 private:

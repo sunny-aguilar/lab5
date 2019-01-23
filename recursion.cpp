@@ -57,9 +57,16 @@ void Game::chooseOption() {
             break;
         case 2:
             {
-                const int SIZE = 10;
-                int integers[] = {1,2,3,4,5,6,7,8,9,10};
-                secondRecursive(integers, SIZE);
+                menu.menuEnterArraySize();
+                int size = menu.validateNumber(1,20);
+                int *integers = new int[size];
+                for (int index = 0; index < size; index++) {
+                    menu.menuEnterArrayValue(index);
+                    int value = menu.validateNumber(1,100);
+                    integers[index] = value;
+                    cout << "Value saved is " << integers[index] << endl;
+                }
+                secondRecursive(integers, size);
             }
             break;
         case 3:
@@ -106,7 +113,7 @@ void Game::secondRecursive(int *intArr, int size) {
     if (size == 1) {
 
     }
-    else if () {
+    else if (0) {
 
     }
 

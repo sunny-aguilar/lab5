@@ -37,6 +37,25 @@ void Menu::menuReversedString() {
 };
 
 /*********************************************************************
+** Description:     prompts user to enter the array size
+*********************************************************************/
+void Menu::menuEnterArraySize() {
+    cout << " SUM AN ARRAY - Enter the size of the array\n"
+            "+--------------------------------------------------+\n"
+            ">> ";
+}
+
+/*********************************************************************
+** Description:     prompts user to enter the value for the array
+*********************************************************************/
+void Menu::menuEnterArrayValue(int index) {
+    cout << " SUM AN ARRAY - Enter an integer between 1 and 100\n"
+            " for the array at index["<< index << "]\n"
+            "+--------------------------------------------------+\n"
+            ">> ";
+}
+
+/*********************************************************************
 ** Description:     prompts user that the program has ended
 *********************************************************************/
 void Menu::menuEndGame() {
