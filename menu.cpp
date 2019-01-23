@@ -49,7 +49,7 @@ void Menu::menuEndGame() {
 *********************************************************************/
 void Menu::menuEnterString() {
     cout << " ENTER A STRING AND I WILL\n"
-            " REVERSE IT USING RECURSION"
+            " REVERSE IT USING RECURSION\n"
             "+--------------------------------------------------+\n"
             ">> ";
 }

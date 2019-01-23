@@ -70,17 +70,25 @@ void Game::chooseOption() {
 }
 
 /*********************************************************************
-** Description:     first recursive function
+** Description:     first recursive function. Reverses a string using
+ *                  recursion
 *********************************************************************/
 void Game::firstRecursive(string userString) {
-    if (userString.length() > 1) {
+    if (userString.length() == 1) {
+        // base case
         cout << userString.at(userString.length() - 1);
+    }
+    else if (userString.length() > 1) {
+        // print last letter in string
+        cout << userString.at(userString.length() - 1);
+
+        // remove last letter in string
         userString.pop_back();
+
+        // recursive function call
         Game::firstRecursive(userString);
     }
-    else if (userString.length() == 1) {
-        cout << userString.at(userString.length() - 1);
-    }
+
 }
 
 /*********************************************************************
