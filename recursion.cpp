@@ -56,7 +56,11 @@ void Game::chooseOption() {
             }
             break;
         case 2:
-            secondRecursive();
+            {
+                const int SIZE = 10;
+                int integers[] = {1,2,3,4,5,6,7,8,9,10};
+                secondRecursive(integers, SIZE);
+            }
             break;
         case 3:
             thirdRecursive();
@@ -97,9 +101,9 @@ void Game::firstRecursive(string userString) {
 /*********************************************************************
 ** Description:     second recursive function
 *********************************************************************/
-void Game::secondRecursive() {
+void Game::secondRecursive(int *intArr, int size) {
     cout << "Second function called\n";
-
+    
 
 }
 

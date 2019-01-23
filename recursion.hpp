@@ -21,7 +21,7 @@ public:
     void gameflow();
     void chooseOption();
     void firstRecursive(std::string userString);
-    void secondRecursive();
+    void secondRecursive(int *intArr, int size);
     void thirdRecursive();
 
 private:
