@@ -27,6 +27,7 @@ public:
     void menuReversedString();
     void menuEnterArraySize();
     void menuEnterArrayValue(int index);
+    void menuArraySum(int sum, int *arr, int size);
     int validateNumber(int min, int max);
 
 private:

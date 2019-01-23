@@ -50,9 +50,21 @@ void Menu::menuEnterArraySize() {
 *********************************************************************/
 void Menu::menuEnterArrayValue(int index) {
     cout << " SUM AN ARRAY - Enter an integer between 1 and 100\n"
-            " for the array at index["<< index << "]\n"
+            "                for the array at index["<< index << "]\n"
             "+--------------------------------------------------+\n"
             ">> ";
+}
+
+/*********************************************************************
+** Description:     displays to the user the sum of the array
+*********************************************************************/
+void Menu::menuArraySum(int sum, int *arr, int size) {
+    cout << " SUM AN ARRAY - the sum of the array is " << sum <<"\n"
+            "+--------------------------------------------------+\n"
+            "array elements {";
+            for (int index = 0; index < size; index++) {
+                
+            }
 }
 
 /*********************************************************************

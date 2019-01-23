@@ -64,11 +64,11 @@ void Game::chooseOption() {
                     menu.menuEnterArrayValue(index);
                     int value = menu.validateNumber(1,100);
                     integers[index] = value;
-                    cout << "Value saved is " << integers[index] << endl;
+                    cout << "Value saved is " << integers[index] << endl << endl;
                 }
                 int arraySum = 0;
                 arraySum = secondRecursive(integers, size);
-                cout << "The sum of the array is " << arraySum << endl;
+                menu.menuArraySum(arraySum, integers, size);
             }
             break;
         case 3:
