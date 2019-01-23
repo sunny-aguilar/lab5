@@ -103,7 +103,12 @@ void Game::firstRecursive(string userString) {
 *********************************************************************/
 void Game::secondRecursive(int *intArr, int size) {
     cout << "Second function called\n";
-    
+    if (size == 1) {
+
+    }
+    else if () {
+
+    }
 
 }
 
