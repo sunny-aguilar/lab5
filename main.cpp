@@ -11,7 +11,7 @@
 #include <iostream>
 
 int main() {
-    Recursion rec;
+    Game rec;
     rec.startSim();
     return 0;
 }

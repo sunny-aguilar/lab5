@@ -10,12 +10,19 @@
 #ifndef RECURSION_HPP
 #define RECURSION_HPP
 
-class Recursion {
+#include "menu.hpp"
+
+class Game {
 public:
+    Game();
     void startSim();
     void gameflow();
-private:
+    void firstRecursive();
+    void secondRecursive();
+    void thirdRecursive();
 
+private:
+    Menu menu;
 };
 
 #endif //LAB5_RECURSION_HPP
