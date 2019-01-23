@@ -59,13 +59,13 @@ void Menu::menuEnterArrayValue(int index) {
 ** Description:     displays to the user the sum of the array
 *********************************************************************/
 void Menu::menuArraySum(int sum, int *arr, int size) {
-    cout << " SUM AN ARRAY - the sum of the array is " << sum <<"\n"
+    cout << " SUM OF ARRAY - the sum of the array is " << sum <<"\n"
             "+--------------------------------------------------+\n"
             "array elements {";
             for (int index = 0; index < size; index++) {
                 cout << arr[index] << ", ";
             }
-    cout << "}";
+    cout << "}\n\n";
 }
 
 /*********************************************************************
