@@ -8,6 +8,7 @@
 *********************************************************************/
 
 #include "menu.hpp"
+#include <iostream>
 
 /*********************************************************************
 ** Description:     no-args default constructor
@@ -20,21 +21,28 @@ Menu::Menu() {}
 void Menu::menuStart() {
     cout << " CHOOSE A RECURSIVE FUNCTION\n"
             "+--------------------------------------------------+\n";
-    cout << "  1. Reverse a string     3. A triangular number     \n"
-            "  2. Sum of an array      4. Quit                    \n"
-            "+--------------------------------------------------+\n\n";
+    cout << "  1. Reverse a string     3. A triangular number    \n"
+            "  2. Sum of an array      4. Quit                   \n"
+            "+--------------------------------------------------+\n"
+            ">> ";
 }
 
 /*********************************************************************
-** Description:     a
+** Description:     prompts user that the program has ended
 *********************************************************************/
 void Menu::menuEndGame() {
     cout << " Program has ended\n"
             "+--------------------------------------------------+\n";
 }
 
-
-
+/*********************************************************************
+** Description:     prompts user that the program has ended
+*********************************************************************/
+void Menu::menuEnterString() {
+    cout << " ENTER A STRING AND I WILL REVERSE IT\n"
+            "+--------------------------------------------------+\n"
+            ">> ";
+}
 
 
 

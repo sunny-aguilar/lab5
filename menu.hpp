@@ -23,6 +23,7 @@ public:
     Menu();
     void menuStart();
     void menuEndGame();
+    void menuEnterString();
     int validateNumber(int min, int max);
 
 private:

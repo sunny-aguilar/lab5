@@ -66,7 +66,11 @@ void Game::chooseOption() {
 ** Description:     first recursive function
 *********************************************************************/
 void Game::firstRecursive() {
+    std::string userString{};
+
     cout << "First function called\n";
+    menu.menuEnterString();
+    getline(cin, userString);
 }
 
 /*********************************************************************
@@ -74,6 +78,8 @@ void Game::firstRecursive() {
 *********************************************************************/
 void Game::secondRecursive() {
     cout << "Second function called\n";
+
+
 }
 
 /*********************************************************************
@@ -81,4 +87,6 @@ void Game::secondRecursive() {
 *********************************************************************/
 void Game::thirdRecursive() {
     cout << "Third function called\n";
+
+
 }
