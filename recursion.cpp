@@ -30,9 +30,6 @@ void Game::startSim() {
 *********************************************************************/
 void Game::gameflow() {
     do {
-        // show menu to pick functions
-        menu.menuStart();
-
         // show recursive function menu
         chooseOption();
 

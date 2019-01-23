@@ -20,9 +20,9 @@ Menu::Menu() {}
 void Menu::menuStart() {
     cout << " CHOOSE A RECURSIVE FUNCTION\n"
             "+--------------------------------------------------+\n";
-    cout << "  1. Reverse a string        2. Sum of an array"
-            "  3. A triangular number     4. Quit                  "
-            "+--------------------------------------------------+\n";
+    cout << "  1. Reverse a string        2. Sum of an array     \n"
+            "  3. A triangular number     4. Quit                \n"
+            "+--------------------------------------------------+\n\n";
 }
 
 /*********************************************************************
