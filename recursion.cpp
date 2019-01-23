@@ -139,7 +139,10 @@ int Game::secondRecursive(int *intArr, int size) {
 }
 
 /*********************************************************************
-** Description:     third recursive function
+** Description:     third recursive function. Calculates the
+**                  number of an integer N. Algorithm - return N
+**                  plus the value return by calling the recursive
+**                  function again until base case where 1 is returned.
 *********************************************************************/
 int Game::thirdRecursive(int n) {
     // base case
