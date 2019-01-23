@@ -21,10 +21,10 @@ public:
     void firstRecursive();
     void secondRecursive();
     void thirdRecursive();
-    bool keepPlaying();
 
 private:
     Menu menu;
+    bool keepPlaying;
 };
 
 #endif //LAB5_RECURSION_HPP

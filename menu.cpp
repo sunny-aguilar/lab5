@@ -20,23 +20,17 @@ Menu::Menu() {}
 void Menu::menuStart() {
     cout << " CHOOSE A RECURSIVE FUNCTION\n"
             "+--------------------------------------------------+\n";
-    cout << "  1. Reverse a string        2. Sum of an array     \n"
-            "  3. A triangular number     4. Quit                \n"
+    cout << "  1. Reverse a string     3. A triangular number     \n"
+            "  2. Sum of an array      4. Quit                    \n"
             "+--------------------------------------------------+\n\n";
 }
 
 /*********************************************************************
 ** Description:     a
 *********************************************************************/
-void Menu::menuQuit() {
-    cout << " 1. Continue    or    2. Quit\n";
-}
-
-/*********************************************************************
-** Description:     a
-*********************************************************************/
 void Menu::menuEndGame() {
-    cout << " Program has ended\n";
+    cout << " Program has ended\n"
+            "+--------------------------------------------------+\n";
 }
 
 

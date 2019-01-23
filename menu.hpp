@@ -22,7 +22,6 @@ class Menu {
 public:
     Menu();
     void menuStart();
-    void menuQuit();
     void menuEndGame();
     int validateNumber(int min, int max);
 

@@ -12,29 +12,27 @@
 /*********************************************************************
 ** Description:     no-args default constructor
 *********************************************************************/
-Game::Game() {}
+Game::Game() : keepPlaying{false} {}
 
 /*********************************************************************
 ** Description:     start recursion simulation
 *********************************************************************/
 void Game::startSim() {
-    // set simulation variables
-    menu.menuStart();
     // start game
-
     gameflow();
 }
 
 /*********************************************************************
-** Description:     game flow control
+** Description:     game flow control shows start menu and keeps
+**                  looping until player quits
 *********************************************************************/
 void Game::gameflow() {
     do {
         // show recursive function menu
+        menu.menuStart();
+        // process player option chosen
         chooseOption();
-
-
-    } while (keepPlaying());
+    } while (keepPlaying);
 
     // prompts user that game has ended
     menu.menuEndGame();
@@ -42,24 +40,11 @@ void Game::gameflow() {
 }
 
 /*********************************************************************
-** Description:     bool function returns true if player keeps
-**                  playing, false if player wants to quit
-*********************************************************************/
-bool Game::keepPlaying() {
-    menu.menuQuit();
-    if (menu.validateNumber(1,2) == 1) {
-        return true;
-    }
-    else if (menu.validateNumber(1,2) == 2) {
-        return false;
-    }
-}
-
-/*********************************************************************
-** Description:     a
+** Description:     this function calls the recursive function
+**                  by the user. User can also quit.
 *********************************************************************/
 void Game::chooseOption() {
-    switch (menu.validateNumber(1,3)) {
+    switch (menu.validateNumber(1,4)) {
         case 1:
             firstRecursive();
             break;
@@ -68,6 +53,9 @@ void Game::chooseOption() {
             break;
         case 3:
             thirdRecursive();
+            break;
+        case 4:
+            keepPlaying = false;
             break;
         default:
             cout << "Unable to make your selection!\n";
