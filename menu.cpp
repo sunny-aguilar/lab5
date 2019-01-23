@@ -86,7 +86,7 @@ void Menu::menuTriangularNumber() {
 ** Description:     displays results of triangular number
 *********************************************************************/
 void Menu::menuTriangularResults(int n) {
-    
+
 }
 
 /*********************************************************************
