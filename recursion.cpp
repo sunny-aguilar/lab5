@@ -88,7 +88,6 @@ void Game::firstRecursive(string userString) {
         // recursive function call
         Game::firstRecursive(userString);
     }
-
 }
 
 /*********************************************************************
