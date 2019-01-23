@@ -141,8 +141,13 @@ int Game::secondRecursive(int *intArr, int size) {
 /*********************************************************************
 ** Description:     third recursive function
 *********************************************************************/
-void Game::thirdRecursive(int n) {
+int Game::thirdRecursive(int n) {
     cout << "Third function called\n";
-
+    if (n == 1) {
+        return n;
+    }
+    else if (n > 1) {
+        return n + thirdRecursive(n - 1);
+    }
 
 }
