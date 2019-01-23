@@ -64,7 +64,7 @@ void Game::chooseOption() {
                     menu.menuEnterArrayValue(index);
                     int value = menu.validateNumber(1,100);
                     integers[index] = value;
-                    cout << "Value saved is " << integers[index] << endl << endl;
+                    cout << ">>Value stored " << integers[index] << endl << endl;
                 }
                 int arraySum = 0;
                 arraySum = secondRecursive(integers, size);

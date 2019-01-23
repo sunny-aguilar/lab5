@@ -56,7 +56,8 @@ void Menu::menuEnterArrayValue(int index) {
 }
 
 /*********************************************************************
-** Description:     displays to the user the sum of the array
+** Description:     displays to the user the sum of the array as well
+**                  as the array values entered
 *********************************************************************/
 void Menu::menuArraySum(int sum, int *arr, int size) {
     cout << " SUM OF ARRAY - the sum of the array is " << sum <<"\n"
