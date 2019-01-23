@@ -17,9 +17,11 @@ public:
     Game();
     void startSim();
     void gameflow();
+    void chooseOption();
     void firstRecursive();
     void secondRecursive();
     void thirdRecursive();
+    bool keepPlaying();
 
 private:
     Menu menu;
