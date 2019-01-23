@@ -1,10 +1,9 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            Jan 2019
-** Description:     LAB5
-**                  d
-**                  d
-**                  d
+** Description:     Menu class contains a series of messages and
+**                  prompts for the user. Menu class also validates
+**                  user's input.
 *********************************************************************/
 
 #ifndef MENU_HPP
