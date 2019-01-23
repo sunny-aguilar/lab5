@@ -74,7 +74,9 @@ void Game::chooseOption() {
             }
             break;
         case 3:
-            thirdRecursive();
+            {
+                thirdRecursive();
+            }
             break;
         case 4:
             keepPlaying = false;
