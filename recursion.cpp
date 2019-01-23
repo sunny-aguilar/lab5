@@ -75,7 +75,11 @@ void Game::chooseOption() {
             break;
         case 3:
             {
-                thirdRecursive();
+                menu.menuTriangularNumber();
+                int n = menu.validateNumber(1,50);
+                int triangularSum = 0;
+                triangularSum = thirdRecursive(n);
+                menu.menuTriangularResults(triangularSum);
             }
             break;
         case 4:
@@ -137,7 +141,7 @@ int Game::secondRecursive(int *intArr, int size) {
 /*********************************************************************
 ** Description:     third recursive function
 *********************************************************************/
-void Game::thirdRecursive() {
+void Game::thirdRecursive(int n) {
     cout << "Third function called\n";
 
 

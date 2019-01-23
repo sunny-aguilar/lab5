@@ -24,7 +24,7 @@ public:
     void chooseOption();
     void firstRecursive(std::string userString);
     int secondRecursive(int *intArr, int size);
-    void thirdRecursive();
+    int thirdRecursive(int n);
 
 private:
     Menu menu;

@@ -75,6 +75,21 @@ void Menu::menuArraySum(int sum, int *arr, int size) {
 }
 
 /*********************************************************************
+** Description:     prompts user to enter a value from 1 to N
+*********************************************************************/
+void Menu::menuTriangularNumber() {
+    cout << " TRIANGULAR NUMBER - Enter a number between 1 and 50\n"
+            "+--------------------------------------------------+\n";
+}
+
+/*********************************************************************
+** Description:     displays results of triangular number
+*********************************************************************/
+void Menu::menuTriangularResults(int n) {
+    
+}
+
+/*********************************************************************
 ** Description:     prompts user that the program has ended
 *********************************************************************/
 void Menu::menuEndGame() {
