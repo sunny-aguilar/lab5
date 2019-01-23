@@ -49,6 +49,7 @@ void Game::chooseOption() {
     switch (menu.validateNumber(1,4)) {
         case 1:
             {
+                // recursive function 1 selected
                 string userString;
                 menu.menuEnterString();
                 getline(cin, userString);
@@ -59,6 +60,7 @@ void Game::chooseOption() {
             break;
         case 2:
             {
+                // recursive function 2 selected
                 menu.menuEnterArraySize();
                 int size = menu.validateNumber(1,20);
                 int *integers = new int[size];
@@ -75,6 +77,7 @@ void Game::chooseOption() {
             break;
         case 3:
             {
+                // recursive function 3 selected
                 menu.menuTriangularNumber();
                 int n = menu.validateNumber(1,50);
                 int triangularSum = 0;
