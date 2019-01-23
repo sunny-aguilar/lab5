@@ -28,7 +28,7 @@ public:
     void menuEnterArrayValue(int index);
     void menuArraySum(int sum, int *arr, int size);
     void menuTriangularNumber();
-    void menuTriangularResults(int n);
+    void menuTriangularResults(int n, int sum);
     int validateNumber(int min, int max);
 
 private:

@@ -85,9 +85,9 @@ void Menu::menuTriangularNumber() {
 /*********************************************************************
 ** Description:     displays results of triangular number
 *********************************************************************/
-void Menu::menuTriangularResults(int n) {
-    cout << " TRIANGULAR NUMBER - Enter a number between 1 and 50\n"
-            "+--------------------------------------------------+\n";
+void Menu::menuTriangularResults(int n, int sum) {
+    cout << " TRIANGULAR NUMBER - Triangular number for n = " << n << " is " << sum << "\n"
+            "+--------------------------------------------------+\n\n\n";
 }
 
 /*********************************************************************
