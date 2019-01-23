@@ -1,10 +1,12 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            Jan 2019
-** Description:     LAB5
-**                  d
-**                  d
-**                  d
+** Description:     This class contains three functions that perform
+**                  recursion in order to solve the problem. Function
+**                  one reverses a string using recursion. Function
+**                  two sums the contents of an array using recursion,
+**                  and function three calculates the triangular
+**                  number of an integer N.
 *********************************************************************/
 
 #include "recursion.hpp"
