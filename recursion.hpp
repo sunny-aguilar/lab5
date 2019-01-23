@@ -11,6 +11,8 @@
 #define RECURSION_HPP
 
 #include "menu.hpp"
+#include <string>
+using std::string;
 
 class Game {
 public:
@@ -18,7 +20,7 @@ public:
     void startSim();
     void gameflow();
     void chooseOption();
-    void firstRecursive();
+    void firstRecursive(std::string userString);
     void secondRecursive();
     void thirdRecursive();
 

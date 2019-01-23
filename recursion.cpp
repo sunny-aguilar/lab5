@@ -12,7 +12,7 @@
 /*********************************************************************
 ** Description:     no-args default constructor
 *********************************************************************/
-Game::Game() : keepPlaying{false} {}
+Game::Game() : keepPlaying{true} {}
 
 /*********************************************************************
 ** Description:     start recursion simulation
@@ -46,7 +46,14 @@ void Game::gameflow() {
 void Game::chooseOption() {
     switch (menu.validateNumber(1,4)) {
         case 1:
-            firstRecursive();
+            {
+                string userString;
+                menu.menuEnterString();
+                getline(cin, userString);
+                menu.menuReversedString();
+                firstRecursive(userString);
+                cout << endl << endl << endl;
+            }
             break;
         case 2:
             secondRecursive();
@@ -65,12 +72,15 @@ void Game::chooseOption() {
 /*********************************************************************
 ** Description:     first recursive function
 *********************************************************************/
-void Game::firstRecursive() {
-    std::string userString{};
-
-    cout << "First function called\n";
-    menu.menuEnterString();
-    getline(cin, userString);
+void Game::firstRecursive(string userString) {
+    if (userString.length() > 1) {
+        cout << userString.at(userString.length() - 1);
+        userString.pop_back();
+        Game::firstRecursive(userString);
+    }
+    else if (userString.length() == 1) {
+        cout << userString.at(userString.length() - 1);
+    }
 }
 
 /*********************************************************************

@@ -19,13 +19,22 @@ Menu::Menu() {}
 ** Description:     start menu that prompts user to select an option
 *********************************************************************/
 void Menu::menuStart() {
-    cout << " CHOOSE A RECURSIVE FUNCTION\n"
+    cout << " LAB5 - CHOOSE A RECURSIVE FUNCTION\n"
             "+--------------------------------------------------+\n";
     cout << "  1. Reverse a string     3. A triangular number    \n"
             "  2. Sum of an array      4. Quit                   \n"
             "+--------------------------------------------------+\n"
             ">> ";
 }
+
+/*********************************************************************
+** Description:     shows user the reversed string
+*********************************************************************/
+void Menu::menuReversedString() {
+    cout << "\n Reversed String Results\n"
+            "+--------------------------------------------------+\n";
+    cout << " ";
+};
 
 /*********************************************************************
 ** Description:     prompts user that the program has ended
@@ -39,7 +48,8 @@ void Menu::menuEndGame() {
 ** Description:     prompts user that the program has ended
 *********************************************************************/
 void Menu::menuEnterString() {
-    cout << " ENTER A STRING AND I WILL REVERSE IT\n"
+    cout << " ENTER A STRING AND I WILL\n"
+            " REVERSE IT USING RECURSION"
             "+--------------------------------------------------+\n"
             ">> ";
 }
