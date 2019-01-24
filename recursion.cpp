@@ -74,6 +74,9 @@ void Game::chooseOption() {
                 int arraySum = 0;
                 arraySum = secondRecursive(integers, size);
                 menu.menuArraySum(arraySum, integers, size);
+
+                // delete memory for dynamic array
+                delete [] integers;
             }
             break;
         case 3:
