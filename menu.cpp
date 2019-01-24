@@ -61,7 +61,7 @@ void Menu::menuEnterArrayValue(int index) {
 void Menu::menuArraySum(int sum, int *arr, int size) {
     cout << " SUM OF ARRAY - the sum of the array is " << sum <<"\n"
             "+--------------------------------------------------+\n"
-            "array elements {";
+            "  array elements {";
             for (int index = 0; index < size; index++) {
                 if (index == size - 1) {
                     cout << arr[index];
