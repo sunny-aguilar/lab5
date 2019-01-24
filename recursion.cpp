@@ -63,6 +63,7 @@ void Game::chooseOption() {
                 // recursive function 2 selected
                 menu.menuEnterArraySize();
                 int size = menu.validateNumber(1,20);
+                // dynamically allocate array
                 int *integers = new int[size];
                 for (int index = 0; index < size; index++) {
                     menu.menuEnterArrayValue(index);
