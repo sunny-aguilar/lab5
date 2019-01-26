@@ -29,6 +29,7 @@ public:
 private:
     Menu menu;
     bool keepPlaying;
+
 };
 
 #endif //LAB5_RECURSION_HPP
