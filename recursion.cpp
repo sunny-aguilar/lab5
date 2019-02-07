@@ -83,7 +83,7 @@ void Game::chooseOption() {
             {
                 // recursive function 3 selected
                 menu.menuTriangularNumber();
-                int n = menu.validateNumber(1,500);
+                int n = menu.validateNumber(1,1000);
                 int triangularSum = 0;
                 triangularSum = thirdRecursive(n);
                 menu.menuTriangularResults(n, triangularSum);
