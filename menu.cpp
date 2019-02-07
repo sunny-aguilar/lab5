@@ -79,7 +79,7 @@ void Menu::menuArraySum(int sum, int *arr, int size) {
 ** Description:     prompts user to enter a value from 1 to N
 *********************************************************************/
 void Menu::menuTriangularNumber() {
-    cout << " TRIANGULAR NUMBER - Enter a number between 1 and 50\n"
+    cout << " TRIANGULAR NUMBER - Enter a number between 1 and 500\n"
             "+--------------------------------------------------+\n";
 }
 
