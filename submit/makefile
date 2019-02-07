@@ -30,7 +30,7 @@ Rec: $(OBJECTS)
 main.o: main.cpp $(HPPs)
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
-recursion.o: recursion.cpp
+recursion.o: recursion.hpp
 
 menu.o: menu.hpp
 
