@@ -1,6 +1,6 @@
 # File: 	makefile
 # Author: 	Sandro Aguilar
-# Date: 	February 2019
+# Date: 	February 6, 2019
 # Description:	Makefile for Lab 5
 
 # Variables to control Makefile operation

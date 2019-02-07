@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Jan 2019
+** Date:            Feb 6, 2019
 ** Description:     Menu class contains a series of messages and
 **                  prompts for the user. Menu class also validates
 **                  user's input.

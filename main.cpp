@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Jan 2019
+** Date:            Feb 6, 2019
 ** Description:     LAB5 - this program presents 3 recursive functions
 **                  that reverse a string, sum the elements of an
 **                  array, and computes a triangular number. A class

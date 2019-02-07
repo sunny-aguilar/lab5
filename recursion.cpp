@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Jan 2019
+** Date:            Feb 6, 2019
 ** Description:     This class contains three functions that perform
 **                  recursion in order to solve the problem. Function
 **                  one reverses a string using recursion. Function
