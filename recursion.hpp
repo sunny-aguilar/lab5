@@ -8,7 +8,6 @@
 **                  and function three calculates the triangular
 **                  number of an integer N.
 *********************************************************************/
-
 #ifndef RECURSION_HPP
 #define RECURSION_HPP
 
