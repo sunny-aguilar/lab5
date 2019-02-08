@@ -27,6 +27,31 @@ void Menu::menuStart() {
 }
 
 /*********************************************************************
+** Description:     prompts user that the program has ended
+*********************************************************************/
+string Menu::menuEnterString() {
+    cout << " ENTER A STRING AND I WILL\n"
+            " REVERSE IT USING RECURSION\n"
+            "+--------------------------------------------------+\n"
+            ">> ";
+    string userString;
+    getline(cin, userString);
+    bool askAgain = true;
+    do {
+        if (userString.length() < 1) {
+            cout << "You must enter at least 1 character!\n";
+            cout << ">> ";
+            getline(cin, userString);
+        }
+        else {
+            askAgain = false;
+        }
+    } while (askAgain);
+
+    return userString;
+}
+
+/*********************************************************************
 ** Description:     shows user the reversed string
 *********************************************************************/
 void Menu::menuReversedString() {
@@ -97,16 +122,6 @@ void Menu::menuTriangularResults(int n, int sum) {
 void Menu::menuEndGame() {
     cout << " Program has ended\n"
             "+--------------------------------------------------+\n";
-}
-
-/*********************************************************************
-** Description:     prompts user that the program has ended
-*********************************************************************/
-void Menu::menuEnterString() {
-    cout << " ENTER A STRING AND I WILL\n"
-            " REVERSE IT USING RECURSION\n"
-            "+--------------------------------------------------+\n"
-            ">> ";
 }
 
 /*********************************************************************

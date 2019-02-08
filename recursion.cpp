@@ -50,9 +50,7 @@ void Game::chooseOption() {
         case 1:
             {
                 // recursive function 1 selected
-                string userString;
-                menu.menuEnterString();
-                getline(cin, userString);
+                string userString = menu.menuEnterString();
                 menu.menuReversedString();
                 firstRecursive(userString);
                 cout << endl << endl << endl;

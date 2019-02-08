@@ -10,9 +10,11 @@
 #define MENU_HPP
 
 #include <iostream>
+#include <string>
 #include <cstring>
 #include <sstream>
 #include <iomanip>
+using std::string;
 using std::cin;
 using std::cout;
 using std::endl;
@@ -22,7 +24,8 @@ public:
     Menu();
     void menuStart();
     void menuEndGame();
-    void menuEnterString();
+    string menuEnterString();
+    void menuValidateString(std::string userString);
     void menuReversedString();
     void menuEnterArraySize();
     void menuEnterArrayValue(int index);
