@@ -158,12 +158,4 @@ int Game::thirdRecursive(int n) {
     else if (n > 1) {
         return n + thirdRecursive(n - 1);
     }
-    // base case
-//    if (n == 1) {
-//        return 1;
-//    }
-//        // recursive call
-//    else if (n > 1) {
-//        return (n*(n+1)/2) + thirdRecursive(n - 1);
-//    }
 }
