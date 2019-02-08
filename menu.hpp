@@ -32,6 +32,7 @@ public:
     void menuTriangularNumber();
     void menuTriangularResults(int n, int sum);
     int validateNumber(int min, int max);
+    int validateInteger(int min, int max);
 
 private:
 

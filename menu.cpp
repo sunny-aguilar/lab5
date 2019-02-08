@@ -73,10 +73,8 @@ void Menu::menuEnterArraySize() {
 ** Description:     prompts user to enter the value for the array
 *********************************************************************/
 void Menu::menuEnterArrayValue(int index) {
-    cout << " SUM AN ARRAY - Enter an integer between 1 and 100\n"
-            "                for the array at index["<< index << "]\n"
-            "+--------------------------------------------------+\n"
-            ">> ";
+    cout << " SUM AN ARRAY - Enter an integer for the array at index["<< index << "]\n"
+            "+--------------------------------------------------+\n";
 }
 
 /*********************************************************************
@@ -92,10 +90,7 @@ void Menu::menuArraySum(int sum, int *arr, int size) {
                 if (index == size - 1) {
                     cout << arr[index];
                 }
-                else {
-                    cout << arr[index] << ", ";
-                }
-
+                else { cout << arr[index] << ", "; }
             }
     cout << "}\n\n\n\n";
 }
@@ -147,7 +142,8 @@ int Menu::validateNumber(int min, int max) {
         tooLong = false;
         if (strlen(choice) > length) {
             tooLong = true;
-            cout << "enter only one number!\n";
+            cout << "Number length exceeded Try again!\n";
+            cout << ">> ";
         }
 
         // check if all characters entered are digits
@@ -162,6 +158,7 @@ int Menu::validateNumber(int min, int max) {
         if (isNotDigit) {
             // prompt user to enter only digits
             cout << "enter only digits!\n";
+            cout << ">> ";
         }
 
         // check if characters entered are within range
@@ -178,6 +175,76 @@ int Menu::validateNumber(int min, int max) {
             }
         }
     } while (tooLong || isNotDigit || notInRange);
+
+    return validatedChoice;
+}
+
+/*********************************************************************
+** Description:     general integer validator where the parameters are
+**                  the min and max numbers acceptable
+*********************************************************************/
+int Menu::validateInteger(int min, int max) {
+    char choice[100];
+    int validatedChoice = 0;
+    bool tooLong = false;
+    bool negativeFound = false;
+    bool notInRange = true;
+    bool characterFound = false;
+    long unsigned length = 0;
+    std::stringstream convert;
+
+    do {
+        cout << "Enter a number from " << min << " to " << max << endl;
+        cout << ">> ";
+        cin.getline(choice, 100);
+
+        // determine # of digits in max value acceptable
+        if (choice[0] == 45) { length = std::to_string(min).length(); }
+        else { length = std::to_string(max).length(); }
+
+        // reject any input that has more than digits than max parameter
+        tooLong = false;
+        if (strlen(choice) > length) {
+            tooLong = true;
+            cout << "Digits entered are too long!\n";
+        }
+
+        // check if a negative character has been found
+        negativeFound = false;
+        if (choice[0] == 45) { negativeFound = true; }
+
+        // if a value entered is a negative, validate value
+        notInRange = true;
+        characterFound = false;
+        if (negativeFound) {
+            for (int index = 1; index < strlen(choice); index++) {
+                if (choice[index] >= 48 && choice[index] <= 57) {
+                    notInRange = false;
+                }
+                if (choice[index] < 48 || choice[index] > 57) {
+                    characterFound = true;
+                }
+                if (characterFound) { notInRange = true; }
+            }
+            if (characterFound) { cout << "Make sure to only enter numbers!\n"; }
+        }
+        else { // if value entered is positive, validate value
+            for (int index = 0; index < strlen(choice); index++) {
+                if (choice[index] >= 48 && choice[index] <= 57) {
+                    notInRange = false;
+                }
+                if (choice[index] < 48 || choice[index] > 57) {
+                    characterFound = true;
+                }
+                if (characterFound) { notInRange = true; }
+            }
+            if (characterFound) { cout << "Make sure to only enter numbers!\n"; }
+        }
+
+    } while (tooLong || notInRange);
+
+    convert << choice;
+    convert >> validatedChoice;
 
     return validatedChoice;
 }
