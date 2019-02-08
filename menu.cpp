@@ -26,7 +26,7 @@ void Menu::menuStart() {
 }
 
 /*********************************************************************
-** Description:     prompts user to enter a stri
+** Description:     prompts user to enter a strin
 *********************************************************************/
 string Menu::menuEnterString() {
     cout << " ENTER A STRING AND I WILL\n"
