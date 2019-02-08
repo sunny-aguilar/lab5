@@ -27,7 +27,7 @@ void Menu::menuStart() {
 
 /*********************************************************************
 ** Description:     prompts user to enter a string to reverse. String
- *                  is 
+ *                  is va
 *********************************************************************/
 string Menu::menuEnterString() {
     cout << " ENTER A STRING AND I WILL\n"
