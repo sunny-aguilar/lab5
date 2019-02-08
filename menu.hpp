@@ -5,7 +5,6 @@
 **                  prompts for the user. Menu class also validates
 **                  user's input.
 *********************************************************************/
-
 #ifndef MENU_HPP
 #define MENU_HPP
 
