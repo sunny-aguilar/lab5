@@ -26,7 +26,7 @@ void Menu::menuStart() {
 }
 
 /*********************************************************************
-** Description:     prompts user to enter a string to reve
+** Description:     prompts user to enter a string to rever
 *********************************************************************/
 string Menu::menuEnterString() {
     cout << " ENTER A STRING AND I WILL\n"
