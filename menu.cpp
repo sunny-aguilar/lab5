@@ -27,7 +27,8 @@ void Menu::menuStart() {
 
 /*********************************************************************
 ** Description:     prompts user to enter a string to reverse. String
- *                  is validated to make sure
+**                  is validated to make sure user enters at least 1
+**                  character.
 *********************************************************************/
 string Menu::menuEnterString() {
     cout << " ENTER A STRING AND I WILL\n"
