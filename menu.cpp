@@ -5,7 +5,6 @@
 **                  prompts for the user. Menu class also validates
 **                  user's input.
 *********************************************************************/
-
 #include "menu.hpp"
 #include <iostream>
 
