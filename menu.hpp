@@ -25,7 +25,6 @@ public:
     void menuStart();
     void menuEndGame();
     string menuEnterString();
-    void menuValidateString(std::string userString);
     void menuReversedString();
     void menuEnterArraySize();
     void menuEnterArrayValue(int index);

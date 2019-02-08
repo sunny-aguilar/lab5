@@ -60,12 +60,12 @@ void Game::chooseOption() {
             {
                 // recursive function 2 selected
                 menu.menuEnterArraySize();
-                int size = menu.validateNumber(1,20);
+                int size = menu.validateNumber(1,100);
                 // dynamically allocate array
                 int *integers = new int[size];
                 for (int index = 0; index < size; index++) {
                     menu.menuEnterArrayValue(index);
-                    int value = menu.validateNumber(1,100);
+                    int value = menu.validateNumber(1,10000);
                     integers[index] = value;
                     cout << ">> Value stored " << integers[index] << endl << endl;
                 }
