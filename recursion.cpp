@@ -105,7 +105,7 @@ void Game::chooseOption() {
 void Game::firstRecursive(string userString) {
     if (userString.length() == 1) {
         // base case
-        cout << userString.at(userString.length() - 1);
+        cout << userString.at(userString.length() - 1) << endl;
     }
     else if (userString.length() > 1) {
         // print last letter in string
